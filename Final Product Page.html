@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Product Page</title>
+    <style>
+        .Promo{
+    display: flex;
+    justify-content: center;
+    background-color: #F7F4F2;
+    color: #55565A;
+}
+.Promo a{
+    color: #55565A;
+    font-weight: bolder;
+}
+.title{
+    display:flex;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid black;
+    }
+
+.title a{
+    color: #55565A;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.titleinputs{
+    display:flex;
+     padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+.titleinputs select{
+    -webkit-appearance: none;
+    border: none;
+    background-color: white;
+    font-size: 12px;
+}
+
+.titleinputs button{
+border: 0ch;
+background-color: white;
+color: #55565A;
+font-size: 12px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav>div{
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+}
+.nav button{
+border: 0ch;
+background-color: white;
+color: #55565A;
+font-weight: 550;
+font-size: 14px;
+}
+.nav a{
+    color: #55565A;
+    text-decoration: none;
+}
+.nav select{
+    -webkit-appearance: none;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    color: #55565A;
+    font-weight: 550;
+   }
+   #products{
+            display: grid;
+            width: 60%;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 40px;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        #products img{
+            width: 100%;
+            height: 400px;
+        }
+        #products button{
+            border: 0ch;
+            border-radius: 5px;
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            background-color: white;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+        .footer{
+display: flex;
+justify-content: space-around;
+margin-top: 40px;
+}
+.footer a{
+    color: #55565A;
+    text-decoration: none;
+}
+.footer ul{
+list-style: none;
+padding-left: 0pt;
+}
+
+    </style>
+</head>
+<body>
+    <div class="Promo">
+        <p >Limited Time Join PC Perks For FREE + Save 10% On Every Order <a href="">Learn More</a></p>
+       </div>
+       <div class="title">
+        <p><a href="">Find A Consultant</a></p>
+        <img src="" alt="RODAN + FEILDS">
+           <div class="titleinputs">
+             <button>Search</button> 
+            <button>Sign In</button>
+            <button>Cart</button>
+              <select name="English" id="">
+                 <option value="">US (English)</option>
+                 <option value="">Canada (English)</option>
+                 <option value="">Australia (English)</option>
+        
+              </select>
+          </div>
+        </div>
+    
+        
+        <div class="nav">
+           <div>
+            <select name="SHOP" id="">
+                <option value="">SHOP BY PRODUCTLINE</option>
+                <option value="">Redefine</option>
+                <option value="">Reverse</option>
+                <option value="">Recharge</option>
+                <option value="">Umblemish</option>
+                <option value="">Spotless</option>
+                <option value="">Soothe</option>
+                <option value="">Enhancement</option>
+                <option value="">Essentials</option>
+                <option value="">Dermacosmetics</option>
+                <option value="">Pro Skin Care Tools</option>
+                <option value="">All Products</option>
+            </select>
+    
+            <button>BESTSELLERS</button>
+    
+           <select name="FEATURED" id="">
+            <option value="">FEATURED</option>
+            <option value="">Special Offer</option>
+            <option value="">Before and After</option>
+            <option value="">New Total RF Serum</option>
+            <option value="">Spotless For Teens</option>
+            <option value="">Self Care Essentials</option>
+           </select>
+    
+           <select name="OUR STORY" id="">
+            <option value="">OUR STORY</option>
+            <option value="">R+F Difference</option>
+            <option value="">Personalized Service</option>
+            <option value="">Explore Our Regimens</option>
+            <option value="">Our Founders</option>
+            <option value="">Our Impact</option>
+           </select>
+    
+           <button><a href="">PERKS PROGRAM</a></button>
+    
+           <button><a href="">BECOME A CONSULTANT</a></button>
+    
+           <button><a href="">BLOG</a></button>
+    
+           </div>
+        </div>
+
+        <select id="filter">
+            <option value="All">All Products</option>
+            <option value="Regimens">Regimens</option>
+            <option value="Eyes">Eyes</option>
+            <option value="Accessories">Accessories</option>
+        </select>
+        <div id="products"></div>
+
+        <div class="footer">
+            <div>
+                <div>ABOUT R+F</div>
+                <ul>
+                    <li><a href="">PRESS ROOM</a></li>
+                    <li><a href="">COMPANY INFO</a></li>
+                    <li><a href="">EXECUTIVE TEAM</a></li>
+                    <li><a href="">CAREERS</a></li>
+                    <li><a href="">R+F RECYCLING PROGRAM</a></li>
+                    <li><a href="">BLOG</a></li>
+                </ul>
+            </div>
+            <div>
+                <div>HELP</div>
+                <ul>
+                    <li><a href="">PRODUCTS & HELP CENTRE</a></li>
+                    <li><a href="">SHIPPING</a></li>
+                    <li><a href="">STAISFACTION GUARANTEE</a></li>
+                    <li><a href="">PROMOTIONAL TERMS & CONDITIONS</a></li>
+                    <li><a href="">R+F FAQ</a></li>
+                    <li><a href="">KLARNA</a></li>
+                    <LI><a href="">SITE MAP</a></LI>
+                </ul>
+            </div>
+            
+            
+    
+        </div>
+
+        
+    
+</body>
+<script>
+    let productData=[
+  {
+       name: "R + F Lash Boost ",
+       price: "$80",
+       catagory:"Regimens",
+       img: "https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY",
+   
+     },
+  {
+       name: "REDEFINE Regimen ",
+       price: "$88",
+       catagory:"Eyes",
+        img: "https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY",
+   
+     },
+  {
+       name: "Total RF Serum",
+       price: "$92",
+        catagory:"Eyes",
+       img: "https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+   
+     },
+  {
+       name: "RECHARGE Regimen ",
+       price: "$64",
+       catagory:"Eyes",
+        img: "https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+   
+     },
+  {
+       name: "SOOTHE Regimen ",
+       price: "$128",
+       catagory:"Regimens",
+        img: "https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA",
+   
+     },
+  {
+       name: "UNBLEMISH Regimen ",
+      price: "$76",
+      catagory:"Eyes",
+        img: "https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh",
+   
+     },
+  {
+       name: "REVERSE Regimen",
+       price: "$110",
+       catagory:"Accessories",
+        img: "https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
+   
+     },
+  {
+       name: "Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+       price: "$120",
+       catagory:"Accessories",
+        img: "https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE",
+   
+     },
+  {
+       name: "Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+       price: "$76",
+       catagory:"Eyes",
+        img: "https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY",
+   
+     },
+  {
+       name: "Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+       price: "$102",
+       catagory:"Accessories",
+        img: "https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+   
+     }, 
+ {
+       name: "Active Hydration Serum ",
+       price: "$80",
+       catagory:"Regimens",
+        img: "https://www.rodanandfields.com/en-us/medias/SOWA125-SOTT050-SOMO050-SOSS050-SOOTHE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MDc1MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oYWMvMTM3NTgzODUxMjc0NTQucG5nfGFmOTE5ZGY1MjdhZmFkNDhhNzNiOTkyYTYzODAxNzI4OTE3ZGQ5Zjk3YzRlOGRlNTIzYzU3MzZlMTQzNGEzNTI",
+   
+     },
+ {
+       name: "REDEFINE Multi-Function Eye Cream",
+       price: "$80",
+        catagory:"Eyes",
+        img: "https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE",
+   
+     },
+ {
+       name: "R + F Lash Boost ",
+       price: "$80",
+       catagory:"Regimens",
+       img: "https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY",
+   
+     },
+  {
+       name: "REDEFINE Regimen ",
+       price: "$88",
+       catagory:"Regimens",
+        img: "https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY",
+   
+     },
+  {
+       name: "Total RF Serum",
+       price: "$92",
+       catagory:"Eyes",
+        img: "https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+   
+     },
+  {
+       name: "RECHARGE Regimen ",
+       price: "$64",
+       catagory:"Regimens",
+        img: "https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+   
+     },
+  {
+       name: "SOOTHE Regimen ",
+       price: "$128",
+        catagory:"Accessories",
+        img: "https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA",
+   
+     },
+  {
+       name: "UNBLEMISH Regimen ",
+       price: "$76",
+       catagory:"Accessories",
+        img: "https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh",
+   
+     },
+  {
+       name: "REVERSE Regimen",
+       price: "$110",
+       catagory:"Regimens",
+        img: "https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5",
+   
+     },
+  {
+       name: "Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+       price: "$120",
+       catagory:"Accessories",
+        img: "https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE",
+   
+     },
+  {
+       name: "Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+       price: "$76",
+       catagory:"Accessories",
+        img: "https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY",
+   
+     },
+  {
+       name: "Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+       price: "$102",
+       catagory:"Regimens",
+        img: "https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
+   
+     }, 
+ {
+       name: "Active Hydration Serum ",
+       price: "$80",
+        catagory:"Regimens",
+        img: "https://www.rodanandfields.com/en-us/medias/SOWA125-SOTT050-SOMO050-SOSS050-SOOTHE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MDc1MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oYWMvMTM3NTgzODUxMjc0NTQucG5nfGFmOTE5ZGY1MjdhZmFkNDhhNzNiOTkyYTYzODAxNzI4OTE3ZGQ5Zjk3YzRlOGRlNTIzYzU3MzZlMTQzNGEzNTI",
+   
+     },
+ {
+       name: "REDEFINE Multi-Function Eye Cream",
+       price: "$80",
+        catagory:"Regimens",
+        img: "https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE",
+   
+     },
+ ]
+       let productsCont=document.getElementById("products");
+ 
+       let filter=document.getElementById("filter");
+        
+       
+ 
+ function displayProducts(productData){
+     
+     productsCont.innerHTML="";
+ 
+     productData.forEach(function(element){
+     let product=document.createElement("div");
+     let img=document.createElement("img");
+     img.src=element.img;
+ 
+     let name= document.createElement("h3");
+     name.textContent=element.name;
+ 
+     let price= document.createElement("p");
+     price.textContent=element.price;
+ 
+ 
+     let addToCart=document.createElement("button");
+     addToCart.innerText="ADD TO BAG";
+ 
+     product.append(img);
+     product.append(name);
+     product.append(price);
+     product.append(addToCart);
+      productsCont.append(product);
+     })
+ }
+ displayProducts(productData);
+        
+   filter.addEventListener("change",function(){
+ 
+  if(filter.value==="All"){
+     displayProducts(productData);
+ }else {
+     let filtered= productData.filter( function(element){
+             return element.catagory===filter.value
+         })
+         displayProducts(filtered);
+ }
+ 
+   }) 
+  
+ </script>
+</html>
